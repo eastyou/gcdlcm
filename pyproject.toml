@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gcdlcm"
+version = "0.1.0"
+description = "最大公因数与最小公倍数教学工具：计算、短除步骤、应用题与 A4 练习纸"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["python", "education", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Natural Language :: Chinese (Simplified)",
+]
+
+[project.scripts]
+gcdlcm = "gcdlcm.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/gcdlcm"
+Source = "https://github.com/eastyou/gcdlcm"
+
+[tool.setuptools]
+packages = ["gcdlcm"]
